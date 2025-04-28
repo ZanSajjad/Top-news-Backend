@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  font-family: "Roboto", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar ,.footer{
+  background-color: #0d1321 !important;
+  color: #fff!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  color: #fff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  position: relative;
+  font-weight: 500;
+  color: rgb(14, 12, 12);
+  margin-right: 1rem;
+}
+
+.nav-item a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 3px;
+  display: inline-block; 
+}
+
+.nav-item a::after {
+  content: "";
+  height: 3px;
+  background-color: #3076f8;
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+.nav-item a:hover {
+  color: #fff !important;
+}
+
+.bg-greenish {
+  background-color: #3e7e75;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  background-color: #ffffff2c;
+  min-width: 500px;
+  padding: 50px 40px 60px 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.form input {
+  width: 100%;
+  height: 50px;
+}
+.form label{
+  font-size: 20px;
+}
+.font-20{
+  font-size: 20px!important;
+}
+
+.font-32 {
+  font-size: 32px !important;
+}
+.font
+.text-muted{
+  font-size: 14px !important;
+}
+.alternative a{
+
+  font-weight: 900;
+}
+
+.btn-form{
+  background: #5F9EA0 ;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border:1px solid #fff;
+}
+.btn-form:hover{
+  background: #5f9ea0a9 ;
+
+  filter: drop-shadow(0 0 0.75rem #5F9EA0);
+}
+
+
+.darkMode:hover{
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #151f35 !important;
+}
+.btn-primary:hover {
+  background: #1e2c49 !important;
+}
+.readBtn:hover {
+  background: #476d8f !important;
+}
+/* 
+.form{
+  transform: translate(0%,90%);
+} */
+
+.footer a{
+  color: #fff!important; 
+  padding-left: 10px;
+}
+
+
+
+.card{
+  filter: drop-shadow(0 0 10px #ffffffa9);
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+  .navbar a {
+
+    font-weight: 500 !important;
+    font-size: 15px !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 575px) {
+  .navbar a {
+    font-weight: 400 !important;
+    font-size: 15px !important;
   }
+  .font-32{
+    font-size: 24px!important;
+  }
+  label,.account{
+    font-size: 16px!important;
+  }
+  /* .font-64{
+    font-size: 36px;
+  } */
+  .form{
+    min-width: 400px!important ;
+  }
+  .form input {
+    width: 100%;
+    height: 40px;
+  }
+  .font-20{
+    font-size: 16px!important;
+  }
+  .btn-form{
+    font-size: 16px!important;
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 425px) {
+  
+  .form{
+    min-width: 320px!important ;
+  }
+
+
+  
+  
 }
